@@ -35,6 +35,6 @@ function draw()
 	myShader.setUniform("uFrameCount", frameCount);
 	shader(myShader);
 	blobDraw(758,-457,333,50,30);
-	blowDraw(463,-221,133,21,-45);
+	blobDraw(463,-221,133,21,-45);
 	blobDraw(slider[0].value(), slider[1].value(), slider[2].value(), slider[3].value());
 }
