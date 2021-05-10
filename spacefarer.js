@@ -1,8 +1,9 @@
 let myShader, myCam, slider;
-function blobDraw(x, y, z, r)
+function blobDraw(x, y, z, r, a)
 {
 	push();
 	translate(x, y, z);
+	rotateZ(a * Math.PI / 180);
 	sphere(r, 80, 80);
 	pop();
 }
@@ -33,6 +34,7 @@ function draw()
 	clear();
 	myShader.setUniform("uFrameCount", frameCount);
 	shader(myShader);
-	blobDraw(758,-457,333,50);
+	blobDraw(758,-457,333,50,30);
+	blowDraw(463,-221,133,21,-45);
 	blobDraw(slider[0].value(), slider[1].value(), slider[2].value(), slider[3].value());
 }
