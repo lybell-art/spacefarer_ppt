@@ -39,7 +39,7 @@ function draw()
 	blobDraw(-292,192,-115,72,22);
 	blobDraw(-540,-280,121,25,132);
 	blobDraw(-575,-339,345,15,-160);
-	blobDraw(slider[0].value(), slider[1].value(), slider[2].value(), slider[3].value());
+	blobDraw(794, 286, 1000 25, 70);
 }
 
 function windowResized()
