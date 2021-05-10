@@ -1,5 +1,5 @@
 let myShader, myCam, slider;
-function blobDraw(x, y, z, r, a)
+function blobDraw(x, y, z, r, a=0)
 {
 	push();
 	translate(x, y, z);
