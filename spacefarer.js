@@ -1,4 +1,4 @@
-let myShader, myCam, slider[4];
+let myShader, myCam, slider;
 function blobDraw(x, y, z, r)
 {
 	push();
@@ -19,6 +19,7 @@ function setup()
 	myCam=new lybellP5Camera(0, 0, -500, 0,0,0);
 	myCam.initialize();
 	noStroke();
+	slider=[null,null,null,null];
 	for(let i=0;i<4; i++)
 	{
 		if(i<3) slider[i]=createSlider(-1000, 1000, 0);
