@@ -37,6 +37,8 @@ function draw()
 	blobDraw(758,-457,333,50,30);
 	blobDraw(463,-221,133,21,-45);
 	blobDraw(292,192,-115,72,22);
+	blobDraw(-540,-280,121,25,132);
+	blobDraw(-575,-339,345,15,-160);
 	blobDraw(slider[0].value(), slider[1].value(), slider[2].value(), slider[3].value());
 }
 
