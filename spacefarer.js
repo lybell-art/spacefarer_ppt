@@ -38,3 +38,9 @@ function draw()
 	blobDraw(463,-221,133,21,-45);
 	blobDraw(slider[0].value(), slider[1].value(), slider[2].value(), slider[3].value());
 }
+
+function windowResized()
+{
+	resizeCanvas(windowWidth, windowHeight, false);
+	myCam.apply();
+}
